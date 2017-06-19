@@ -1,0 +1,14 @@
+[user]
+	email = william.stubler@gmail.com
+	name = nooSphere
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[core]
+	editor = emacsclient
+[push]
+	default = simple
