@@ -1,4 +1,5 @@
-| Package Name    | Apt Package Name  | Notes |
-|-----------------+-------------------+-------|
-| Silver Searcher | silversearcher-ag |       |
-|                 |                   |       |
+| Package Name    | Apt Package Name  | Notes                       |
+|-----------------+-------------------+-----------------------------|
+| Silver Searcher | silversearcher-ag |                             |
+| openssh-server  | openssh-server    | run sudo service ssh start  |
+| openssh-client  | openssh-client    | run ssh-keygen to configure |
