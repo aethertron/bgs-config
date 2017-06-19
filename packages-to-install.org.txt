@@ -3,3 +3,4 @@
 | Silver Searcher | silversearcher-ag |                             |
 | openssh-server  | openssh-server    | run sudo service ssh start  |
 | openssh-client  | openssh-client    | run ssh-keygen to configure |
+| yakuake         | yakuake           |                             |
