@@ -1,0 +1,4 @@
+| Package Name    | Apt Package Name  | Notes |
+|-----------------+-------------------+-------|
+| Silver Searcher | silversearcher-ag |       |
+|                 |                   |       |
