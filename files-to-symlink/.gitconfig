@@ -1,6 +1,6 @@
 [user]
 	email = william.stubler@gmail.com
-	name = nooSphere
+	name = noosphere
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
