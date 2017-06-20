@@ -11,6 +11,9 @@ export PYTHONPATH="$HOME/local/lib64/python2.7/site-packages/:$PYTHONPATH"
 export PYTHONPATH="$HOME/local/lib/python2.7/site-packages/:$PYTHONPATH"
 # export MANPATH=":$MANPATH"
 
+# local file
+[[ -f ~/.bashrc_local ]] && . ~/.bashrc_local
+
 if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
 	return
