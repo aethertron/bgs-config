@@ -6,6 +6,6 @@
 | yakuake         | yakuake           |                             |
 | plank           |                   |                             |
 
-| Source Name | Tar File | Notes |
-|-------------+----------+-------|
-|             |          |       |
+| Source Name | Tar File | URL                                      | Notes                                |
+|-------------+----------+------------------------------------------+--------------------------------------|
+| pyenv       |          | https://github.com/pyenv/pyenv-installer | Info: https://github.com/pyenv/pyenv |
