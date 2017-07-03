@@ -1,11 +1,11 @@
-[kaccess][Global Shortcuts]
-Toggle Screen Reader On and Off=Meta+Alt+S
-
-[kcm_touchpad][Global Shortcuts]
+[KDE Keyboard Layout Switcher][Global Shortcuts]
 Disable Touchpad=Touchpad Off
 Enable Touchpad=Touchpad On
 Switch to Next Keyboard Layout=Ctrl+Alt+K
 Toggle Touchpad=Touchpad Toggle
+
+[kaccess][Global Shortcuts]
+Toggle Screen Reader On and Off=Meta+Alt+S
 
 [kded5][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
@@ -20,11 +20,16 @@ Toggle Keyboard Backlight=Keyboard Light On/Off
 display=Display; Meta+P
 
 [khotkeys][Global Shortcuts]
+{0af40622-ecca-4172-b378-a8a0b55a524d}=none
+{27071967-778c-49de-999d-b87889cf3dad}=none
 {2b6f6f1a-b88e-40b6-a96d-24b7cb129f3c}=Meta+Shift+Print
+{4490067b-864e-4519-a333-0f09cb6ad570}=none
+{60c912ee-3bb7-466b-86e0-ba2cee0ed0c2}=none
 {62806bfd-6f16-431a-bd96-b1e8045ae15c}=Shift+Print
+{9a13d2f7-16c8-4c8f-bd4d-fde732f94d92}=none
 {af4cf9dc-2a21-4067-b0a9-5307cd28630d}=Print
 {cefdfedf-e482-4ecf-9d33-a01599103bee}=Meta+Print
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
@@ -35,7 +40,7 @@ mic_mute=Microphone Mute
 mute=Volume Mute
 
 [krunner][Global Shortcuts]
-run command=Alt+Space; Alt+F2;\s
+run command=Alt+Space; Alt+F2; Search
 run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
@@ -44,9 +49,14 @@ Lock Session=Meta+L; Screensaver
 Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
+log out=none
 
 [kwin][Global Shortcuts]
-Activate Window Demanding Attention=Ctrl+Alt+A
+Activate Window Demanding Attention=none
+ClearLastMouseMark=none
+ClearMouseMarks=none
+Cube=none
+Cylinder=none
 Decrease Opacity=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
@@ -64,6 +74,7 @@ Remove Window From Group=none
 Setup Window Shortcut=none
 Show Desktop=none
 ShowDesktopGrid=Ctrl+F8
+Sphere=none
 Suspend Compositing=Alt+Shift+F12
 Switch One Desktop Down=none
 Switch One Desktop Up=none
@@ -209,7 +220,10 @@ activate task manager entry 6=Meta+6
 activate task manager entry 7=Meta+7
 activate task manager entry 8=Meta+8
 activate task manager entry 9=Meta+9
-activate widget 40=Alt+F1
+activate widget 10=none
+activate widget 20=none
+activate widget 24=none
+activate widget 9=none
 clear-history=none
 clipboard_action=Ctrl+Alt+X
 cycleNextAction=none
