@@ -4,3 +4,5 @@ syntax: glob
 # Saved and Lock files
 \#*#
 .#*
+# Python
+*.pyc
