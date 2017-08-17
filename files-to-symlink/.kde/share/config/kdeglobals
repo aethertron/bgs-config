@@ -140,6 +140,10 @@ DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
 
+[DirSelect Dialog]
+DirSelectDialog Size=792,577
+History Items[$e]=file://$HOME/Documents,file://$HOME/Downloads
+
 [General]
 ColorScheme=ElementaryLuna
 Name=Breeze
@@ -177,7 +181,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=97
+Speedbar Width=107
 View Style=Simple
 listViewIconSize=0
 
