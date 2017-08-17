@@ -6,6 +6,11 @@
 | yakuake         | yakuake           |                             |
 | plank           |                   |                             |
 
+| Python Packages | Distribution | Function            |
+|-----------------+--------------+---------------------|
+| importmagic     | Git Repo     | emacs elpy features |
+
+
 | Source Name | Tar File | URL                                      | Notes                                |
 |-------------+----------+------------------------------------------+--------------------------------------|
 | pyenv       |          | https://github.com/pyenv/pyenv-installer | Info: https://github.com/pyenv/pyenv |
