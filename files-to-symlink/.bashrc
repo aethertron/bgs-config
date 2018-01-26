@@ -2,14 +2,14 @@
 
 # Add uniloc to path, pythonpath and manpath
 export PATH="~/local/bin:~/bin:$PATH"
-# export PATH="$PATH:$HOME/npm/bin"
-## Add dirs in /opt (p)
 
 # Python path configuration
 export PYTHONPATH="$HOME/uniloc/lib/python2.7/site-packages/" #
 export PYTHONPATH="$HOME/local/lib64/python2.7/site-packages/:$PYTHONPATH"
 export PYTHONPATH="$HOME/local/lib/python2.7/site-packages/:$PYTHONPATH"
-# export MANPATH=":$MANPATH"
+
+# Man path configuration
+export MANPATH="$HOME/local/share/man/:$MANPATH"
 
 # local file
 [[ -f ~/.bashrc_local ]] && . ~/.bashrc_local
