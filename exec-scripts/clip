@@ -16,9 +16,9 @@ klipper = dbus.Interface(klipper, dbus_interface='org.kde.klipper.klipper')
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--item", type=int, nargs="?", const=0,
-	help="get the Nth item in clipboard history", metavar="N")
+                    help="get the Nth item in clipboard history", metavar="N")
 parser.add_argument("-x", "--clear", action="store_true", default=False,
-	help="clear the clipboard history")
+                    help="clear the clipboard history")
 parser.add_argument("args", nargs="?")
 
 args = parser.parse_args()
