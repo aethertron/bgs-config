@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add uniloc to path, pythonpath and manpath
-export PATH="~/local/bin:~/bin:$PATH"
+export PATH="$HOME/local/bin:$HOME/bin:$PATH"
 
 # Python path configuration
 export PYTHONPATH="$HOME/uniloc/lib/python2.7/site-packages/" #
