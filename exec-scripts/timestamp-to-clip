@@ -8,9 +8,7 @@ import tempfile
 
 dt = datetime.now()
 ts = dt.strftime("%Y-%m-%d, %H:%M:%S")
-fi = tempfile.NamedTemporaryFile()
+fi = tempfile.TemporaryFile()
 fi.write(ts)
 fi.seek(0)
-# subprocess.call(["clip"], stdin=fi, shell=True)
-# subprocess.call(["/home/wgs/local/bin/clip"], stdin=fi)
 subprocess.call(["clip"], stdin=fi)
