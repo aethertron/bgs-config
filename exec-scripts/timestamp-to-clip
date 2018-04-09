@@ -12,7 +12,7 @@ parser.add_argument("-v", "--verbose", action="store_true")
 args = parser.parse_args(sys.argv[1:])
 
 dt = datetime.now()
-ts = dt.strftime("%Y-%m-%d, %H:%M:%S")
+ts = dt.strftime("%Y-%m-%d, %H:%M")
 fi = tempfile.TemporaryFile()
 fi.write(ts)
 fi.seek(0)
