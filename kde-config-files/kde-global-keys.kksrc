@@ -1,11 +1,47 @@
-[KDE Keyboard Layout Switcher][Global Shortcuts]
+[ActivityManager][Global Shortcuts]
+activate task manager entry 1=Meta+1
+activate task manager entry 10=Meta+0
+activate task manager entry 2=Meta+2
+activate task manager entry 3=Meta+3
+activate task manager entry 4=Meta+4
+activate task manager entry 5=Meta+5
+activate task manager entry 6=Meta+6
+activate task manager entry 7=Meta+7
+activate task manager entry 8=Meta+8
+activate task manager entry 9=Meta+9
+activate widget 21=Alt+F1
+activate widget 35=none
+clear-history=none
+clipboard_action=Ctrl+Alt+X
+cycleNextAction=none
+cyclePrevAction=none
+edit_clipboard=none
+manage activities=Meta+Q
+next activity=Meta+Tab
+previous activity=Meta+Shift+Tab
+repeat_action=Ctrl+Alt+R
+show dashboard=none
+show-barcode=none
+show-on-mouse-pos=none
+stop current activity=Meta+S
+switch-to-activity-09a629ea-0f4a-4e41-889c-71c61f8afe24=none
+switch-to-activity-1a7dbd6e-2290-4456-ace5-b60db001b8f6=none
+switch-to-activity-85eda91b-c7c7-4a38-8573-b50be8ca19f7=none
+switch-to-activity-fb8b1185-db91-4be2-bfe1-1b2a3539c5a3=none
+
+[kaccess][Global Shortcuts]
+Toggle Screen Reader On and Off=Meta+Alt+S
+
+[kcm_touchpad][Global Shortcuts]
 Disable Touchpad=Touchpad Off
 Enable Touchpad=Touchpad On
 Switch to Next Keyboard Layout=Ctrl+Alt+K
 Toggle Touchpad=Touchpad Toggle
-
-[kaccess][Global Shortcuts]
-Toggle Screen Reader On and Off=Meta+Alt+S
+{3f46a2ef-4532-4ed7-8a3c-9f337f0d4a14}=none
+{4c70f216-f945-4f7c-8049-35c1f0ce91c4}=none
+{bd8be801-6368-48ce-bd7c-099363b6f4aa}=none
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
+{e979b0a3-9093-428c-adbd-60735f2dc542}=none
 
 [kded5][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
@@ -19,18 +55,6 @@ Sleep=Sleep
 Toggle Keyboard Backlight=Keyboard Light On/Off
 display=Display; Meta+P
 
-[khotkeys][Global Shortcuts]
-{0af40622-ecca-4172-b378-a8a0b55a524d}=none
-{27071967-778c-49de-999d-b87889cf3dad}=none
-{2b6f6f1a-b88e-40b6-a96d-24b7cb129f3c}=Meta+Shift+Print
-{4490067b-864e-4519-a333-0f09cb6ad570}=none
-{60c912ee-3bb7-466b-86e0-ba2cee0ed0c2}=none
-{62806bfd-6f16-431a-bd96-b1e8045ae15c}=Shift+Print
-{9a13d2f7-16c8-4c8f-bd4d-fde732f94d92}=none
-{af4cf9dc-2a21-4067-b0a9-5307cd28630d}=Print
-{cefdfedf-e482-4ecf-9d33-a01599103bee}=Meta+Print
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
-
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
 decrease_volume=Ctrl+F2
@@ -40,7 +64,7 @@ mic_mute=Microphone Mute
 mute=Volume Mute
 
 [krunner][Global Shortcuts]
-run command=Alt+Space; Alt+F2; Search
+run command=Meta+Space; Alt+F2
 run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
@@ -49,14 +73,9 @@ Lock Session=Meta+L; Screensaver
 Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
-log out=none
 
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=none
-ClearLastMouseMark=none
-ClearMouseMarks=none
-Cube=none
-Cylinder=none
 Decrease Opacity=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
@@ -72,12 +91,11 @@ MoveZoomRight=none
 MoveZoomUp=none
 Remove Window From Group=none
 Setup Window Shortcut=none
-Show Desktop=none
+Show Desktop=Ctrl+F12
 ShowDesktopGrid=Ctrl+F8
-Sphere=none
 Suspend Compositing=Alt+Shift+F12
-Switch One Desktop Down=none
-Switch One Desktop Up=none
+Switch One Desktop Down=Ctrl+Alt+Down
+Switch One Desktop Up=Ctrl+Alt+Up
 Switch One Desktop to the Left=none
 Switch One Desktop to the Right=none
 Switch Window Down=Meta+Alt+Down
@@ -145,8 +163,8 @@ Window Minimize=none
 Window Move=none
 Window No Border=none
 Window On All Desktops=none
-Window One Desktop Down=none
-Window One Desktop Up=none
+Window One Desktop Down=Ctrl+Alt+Shift+Down
+Window One Desktop Up=Ctrl+Alt+Shift+Up
 Window One Desktop to the Left=none
 Window One Desktop to the Right=none
 Window Operations Menu=Alt+F3
@@ -202,41 +220,6 @@ Window to Screen 7=none
 view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
-
-[mediacontrol][Global Shortcuts]
-nextmedia=Media Next
-playpausemedia=Media Play
-previousmedia=Media Previous
-stopmedia=Media Stop
-
-[plasmashell][Global Shortcuts]
-activate task manager entry 1=Meta+1
-activate task manager entry 10=Meta+0
-activate task manager entry 2=Meta+2
-activate task manager entry 3=Meta+3
-activate task manager entry 4=Meta+4
-activate task manager entry 5=Meta+5
-activate task manager entry 6=Meta+6
-activate task manager entry 7=Meta+7
-activate task manager entry 8=Meta+8
-activate task manager entry 9=Meta+9
-activate widget 10=none
-activate widget 20=none
-activate widget 24=none
-activate widget 9=none
-clear-history=none
-clipboard_action=Ctrl+Alt+X
-cycleNextAction=none
-cyclePrevAction=none
-edit_clipboard=none
-manage activities=Meta+Q
-next activity=Meta+Tab
-previous activity=Meta+Shift+Tab
-repeat_action=Ctrl+Alt+R
-show dashboard=Ctrl+F12
-show-barcode=none
-show-on-mouse-pos=none
-stop current activity=Meta+S
 
 [yakuake][Global Shortcuts]
 toggle-window-state=F12
