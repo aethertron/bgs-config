@@ -44,6 +44,7 @@ fi
 
 # * tools
 export PAGER=cat
+export EDITOR=emacsclient
 
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
