@@ -20,6 +20,5 @@ alias more=less
 # -- emacs --
 alias ec='emacsclient -nc'
 alias em="emacsclient -n"
-alias ec="emacsclient -c"
 alias vim=emacs
 alias vi=emacs
