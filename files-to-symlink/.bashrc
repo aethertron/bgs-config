@@ -64,10 +64,14 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac;
 
+echo Color prompt: $color_prompt
+
 if [ "$color_prompt" = yes ]; then
+    echo "Color Prompting"
     PS1='\[\033[01;32m\][\t]\[\033[00m\]\$ '
     # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
+    echo "No Color Prompting"
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt
@@ -83,12 +87,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-
-
-
-
-
+# LESS man page colors (makes Man pages more readable).
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
 
 
 # ****** OLD ******
