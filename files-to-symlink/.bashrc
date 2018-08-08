@@ -5,11 +5,8 @@
 ############################
 
 cleanpath() {
-    local IFS
-    IFS=:
     p=:
-    for d in $*; do [[ -n $d ]] && { [[ $p == *:$d:* ]] || p+=$d:; }; done
-    IFS=
+    for d in $(IFS=:; echo $*); do [[ -n $d ]] && { [[ $p == *:$d:* ]] || p+=$d:; }; done
     echo ${p:1:${#p}-2}
 }
 
