@@ -4,15 +4,30 @@
 ### Main        Section  ###
 ############################
 
+cleanpath() {
+    local IFS
+    IFS=:
+    p=:
+    for d in $*; do [[ -n $d ]] && { [[ $p == *:$d:* ]] || p+=$d:; }; done
+    IFS=
+    echo ${p:1:${#p}-2}
+}
+
 # Add uniloc to path, pythonpath and manpath
 export PATH="$HOME/local/bin:$HOME/bin:$PATH"
+PATH=$(cleanpath $PATH)
 
 # Python path configuration
 export PYTHONPATH="$HOME/local/lib64/python2.7/site-packages/:$PYTHONPATH"
 export PYTHONPATH="$HOME/local/lib/python2.7/site-packages/:$PYTHONPATH"
+PYTHONPATH=$(cleanpath $PYTHONPATH)
 
 # Man path configuration
+export MANPATH="/usr/share/man/:$MANPATH"
 export MANPATH="$HOME/local/share/man/:$MANPATH"
+MANPATH=$(cleanpath $MANPATH)
+
+unset cleanpath
 
 # Local file
 [[ -f ~/.bashrc_local ]] && . ~/.bashrc_local
