@@ -23,6 +23,7 @@ export PYTHONPATH="$HOME/local/lib/python2.7/site-packages/:$PYTHONPATH"
 PYTHONPATH=$(cleanpath $PYTHONPATH)
 
 # Man path configuration
+export MANPATH="/usr/local/share/man/:$MANPATH"
 export MANPATH="/usr/share/man/:$MANPATH"
 export MANPATH="$HOME/local/share/man/:$MANPATH"
 MANPATH=$(cleanpath $MANPATH)
