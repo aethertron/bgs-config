@@ -51,7 +51,7 @@ fi
 
 # Environment variables commonly used by programs
 export PAGER=cat
-export EDITOR='emacsclient -nc'
+export EDITOR='emacsclient -c'
 
 # Colors
 #  set use_color if you want color, if not, can set to empty string or unset
