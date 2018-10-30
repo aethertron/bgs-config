@@ -3,3 +3,5 @@
 
 "\en":history-search-forward
 "\eN":history-search-forward
+
+"\eK":kill-whole-line
