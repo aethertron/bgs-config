@@ -5,6 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -44,7 +45,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+space exec dmenu_run
 
 # kill
-bindsym $mod+Shift+x --release exec --no-startup-id xkill
+bindsym mod1+control+Escape --release exec --no-startup-id xkill
 # not working!
 # bindsym Ctrl+Alt+escape --release exec --no-startup-id xkill
 
@@ -188,3 +189,4 @@ bar {
 # Start kmix to handle sound
 exec kmix
 exec yakuake
+# Note: key mapping is done in .bash_profile right now
