@@ -187,3 +187,4 @@ bar {
 
 # Start kmix to handle sound
 exec kmix
+exec yakuake

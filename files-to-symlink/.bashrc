@@ -50,7 +50,7 @@ if [ -f ~/.bash_functions ]; then
 fi
 
 # Environment variables commonly used by programs
-export PAGER=cat
+export PAGER=less
 export EDITOR='emacsclient -nc'
 
 # Colors
@@ -73,6 +73,9 @@ else
 fi
 
 unset use_color
+
+# Shell options
+shopt -s globstar               # turn on ** and **/ globing! (ex: echo **)
 
 # Autocompletion configuration
 [[ -r /usr/share/bash-completion/bash_completion   ]] && . /usr/share/bash-completion/bash_completion
