@@ -3,3 +3,16 @@
 
 "\en":history-search-forward
 "\eN":history-search-forward
+
+"\C-a": beginning-of-line
+"\em": beginning-of-line
+
+"\eK": kill-whole-line
+
+"\e\C-?": backward-kill-word
+
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+
+# Note: ^H, ^T, etc doesn't work!
+# `showkey -a` can be used to find new combos, replace ^[ with \e
