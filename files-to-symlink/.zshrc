@@ -5,7 +5,7 @@ SAVEHIST=10000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/alex/.zshrc'
+# zstyle :compinstall filename '/home/alex/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -16,5 +16,3 @@ source ~/uniloc/src/git-subrepo/.rc
 
 # Powerline highlighting
 source /usr/share/zsh/site-contrib/powerline.zsh
-
-
