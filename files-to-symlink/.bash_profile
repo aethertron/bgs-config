@@ -4,9 +4,6 @@
 
 # == Profile-only Stuff! ==
 
-# Run xmodmaprc if it exists
-[[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc
-
 # Path stuff that we can get away with doing for every shell!! ==
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
@@ -15,4 +12,3 @@
 # no pyenv for now
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
-
