@@ -186,6 +186,12 @@ bar {
         status_command i3status
 }
 
+# Pass-through mode to simplify working with VNC/RDP
+mode "passthrough" {
+        bindsym $mod+Escape mode "default"
+}
+bindsym $mod+Shift+u mode "passthrough"
+
 # Start kmix to handle sound
 exec kmix
 exec yakuake
