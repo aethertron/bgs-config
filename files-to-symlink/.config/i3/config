@@ -193,6 +193,6 @@ mode "passthrough" {
 bindsym $mod+Shift+u mode "passthrough"
 
 # Start kmix to handle sound
-exec kmix
+# exec kmix
 exec yakuake
 # Note: key mapping is done in .bash_profile right now
