@@ -8,8 +8,8 @@
 "\eN":history-search-forward
 
 # set by default, for reference
-"\e[A":previous-history
-"\e[B":next-history
+"\e[A":previous-history         # up arrow
+"\e[B":next-history             # down arrow
 
 "\C-a": beginning-of-line
 "\em": beginning-of-line
