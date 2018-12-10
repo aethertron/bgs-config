@@ -1,8 +1,15 @@
+"\C-p":history-search-backward
+"\C-n":history-search-forward
+
 "\ep":history-search-backward
 "\eP":history-search-backward
 
 "\en":history-search-forward
 "\eN":history-search-forward
+
+# set by default, for reference
+"\e[A":previous-history
+"\e[B":next-history
 
 "\C-a": beginning-of-line
 "\em": beginning-of-line
