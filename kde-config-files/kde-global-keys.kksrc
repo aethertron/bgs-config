@@ -1,59 +1,17 @@
 [ActivityManager][Global Shortcuts]
-activate task manager entry 1=Meta+1
-activate task manager entry 10=Meta+0
-activate task manager entry 2=Meta+2
-activate task manager entry 3=Meta+3
-activate task manager entry 4=Meta+4
-activate task manager entry 5=Meta+5
-activate task manager entry 6=Meta+6
-activate task manager entry 7=Meta+7
-activate task manager entry 8=Meta+8
-activate task manager entry 9=Meta+9
-activate widget 21=Alt+F1
-activate widget 35=none
-clear-history=none
-clipboard_action=Ctrl+Alt+X
-cycleNextAction=none
-cyclePrevAction=none
-edit_clipboard=none
-manage activities=Meta+Q
-next activity=Meta+Tab
-previous activity=Meta+Shift+Tab
-repeat_action=Ctrl+Alt+R
-show dashboard=none
-show-barcode=none
-show-on-mouse-pos=none
-stop current activity=Meta+S
-switch-to-activity-09a629ea-0f4a-4e41-889c-71c61f8afe24=none
-switch-to-activity-1a7dbd6e-2290-4456-ace5-b60db001b8f6=none
-switch-to-activity-85eda91b-c7c7-4a38-8573-b50be8ca19f7=none
-switch-to-activity-fb8b1185-db91-4be2-bfe1-1b2a3539c5a3=none
+switch-to-activity-3af95c90-33c9-4515-9ee5-c583fa7cf152=none
+
+[KDE Keyboard Layout Switcher][Global Shortcuts]
+Disable Touchpad=none
+Enable Touchpad=none
+Show System Activity=Ctrl+Esc
+Switch to Next Keyboard Layout=Ctrl+Alt+K
+Toggle Touchpad=none
+{74060fbd-5ba4-48b7-8ab8-4170395080d4}=none
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
-
-[kcm_touchpad][Global Shortcuts]
-Disable Touchpad=Touchpad Off
-Enable Touchpad=Touchpad On
-Switch to Next Keyboard Layout=Ctrl+Alt+K
-Toggle Touchpad=Touchpad Toggle
-{3f46a2ef-4532-4ed7-8a3c-9f337f0d4a14}=none
-{4c70f216-f945-4f7c-8049-35c1f0ce91c4}=none
-{bd8be801-6368-48ce-bd7c-099363b6f4aa}=none
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
-{e979b0a3-9093-428c-adbd-60735f2dc542}=none
-
-[kded5][Global Shortcuts]
-Decrease Keyboard Brightness=Keyboard Brightness Down
-Decrease Screen Brightness=Monitor Brightness Down
-Hibernate=Hibernate
-Increase Keyboard Brightness=Keyboard Brightness Up
-Increase Screen Brightness=Monitor Brightness Up
-PowerOff=Power Off
-Show System Activity=Ctrl+Esc
-Sleep=Sleep
-Toggle Keyboard Backlight=Keyboard Light On/Off
-display=Display; Meta+P
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
@@ -64,12 +22,12 @@ mic_mute=Microphone Mute
 mute=Volume Mute
 
 [krunner][Global Shortcuts]
-run command=Meta+Space; Alt+F2
+run command=Meta+Space; Alt+F2; Search
 run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
-Lock Session=Meta+L; Screensaver
+Lock Session=Meta+Ctrl+L; Screensaver
 Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
@@ -91,7 +49,7 @@ MoveZoomRight=none
 MoveZoomUp=none
 Remove Window From Group=none
 Setup Window Shortcut=none
-Show Desktop=Ctrl+F12
+Show Desktop=none
 ShowDesktopGrid=Ctrl+F8
 Suspend Compositing=Alt+Shift+F12
 Switch One Desktop Down=Ctrl+Alt+Down
@@ -116,7 +74,7 @@ Switch to Desktop 19=none
 Switch to Desktop 2=none
 Switch to Desktop 20=none
 Switch to Desktop 3=none
-Switch to Desktop 4=Ctrl+F4
+Switch to Desktop 4=none
 Switch to Desktop 5=none
 Switch to Desktop 6=none
 Switch to Desktop 7=none
@@ -220,6 +178,42 @@ Window to Screen 7=none
 view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
+
+[org_kde_powerdevil][Global Shortcuts]
+Decrease Keyboard Brightness=Keyboard Brightness Down
+Decrease Screen Brightness=Monitor Brightness Down
+Hibernate=Hibernate
+Increase Keyboard Brightness=Keyboard Brightness Up
+Increase Screen Brightness=Monitor Brightness Up
+PowerOff=Power Off
+Sleep=Sleep
+Toggle Keyboard Backlight=Keyboard Light On/Off
+
+[plasmashell][Global Shortcuts]
+activate task manager entry 1=Meta+1
+activate task manager entry 10=Meta+0
+activate task manager entry 2=Meta+2
+activate task manager entry 3=Meta+3
+activate task manager entry 4=Meta+4
+activate task manager entry 5=Meta+5
+activate task manager entry 6=Meta+6
+activate task manager entry 7=Meta+7
+activate task manager entry 8=Meta+8
+activate task manager entry 9=Meta+9
+activate widget 14=Alt+F1
+clear-history=none
+clipboard_action=Ctrl+Alt+X
+cycleNextAction=none
+cyclePrevAction=none
+edit_clipboard=none
+manage activities=Meta+Q
+next activity=Meta+Tab
+previous activity=Meta+Shift+Tab
+repeat_action=Ctrl+Alt+R
+show dashboard=Ctrl+F12
+show-barcode=none
+show-on-mouse-pos=none
+stop current activity=Meta+S
 
 [yakuake][Global Shortcuts]
 toggle-window-state=F12
