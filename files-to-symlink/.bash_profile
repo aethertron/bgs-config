@@ -4,6 +4,10 @@
 
 # == Profile-only Stuff! ==
 
+# I3-related
+
+export TERMINAL=konsole
+
 # Path stuff that we can get away with doing for every shell!! ==
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
