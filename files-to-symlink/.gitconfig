@@ -7,8 +7,9 @@
 	co = checkout
 	br = branch
 	ci = commit
+	lg = log -20 --oneline --decorate --graph --color
 	st = status
 [core]
-	editor = emacsclient
+	editor = kate
 [push]
 	default = simple
