@@ -51,7 +51,7 @@ fi
 
 # Environment variables commonly used by programs
 export PAGER=less
-export EDITOR='emacsclient -c'
+export EDITOR='emacsclient -c --alternate-editor=nano'
 
 # Colors
 #  set use_color if you want color, if not, can set to empty string or unset

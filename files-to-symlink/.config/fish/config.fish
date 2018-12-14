@@ -4,4 +4,7 @@ function fish_user_key_bindings
          bind \eK kill-whole-line
 end
 
+# env
+set --export EDITOR "emacsclient -c --alternate-editor=nano"
+
 alias run="xdg-open"
