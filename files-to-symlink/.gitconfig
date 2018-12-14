@@ -10,6 +10,6 @@
 	lg = log -20 --oneline --decorate --graph --color
 	st = status
 [core]
-	editor = kate
+	editor = emacsclient -c -
 [push]
 	default = simple
