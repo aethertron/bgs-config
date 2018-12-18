@@ -4,6 +4,10 @@ function fish_user_key_bindings
          bind \eK kill-whole-line
 end
 
+if [ -f ~/.config/fish/local_config.fish ]
+   source ~/.config/fish/local_config.fish
+end
+
 # env
 set --export EDITOR "emacsclient -c --alternate-editor=nano"
 
