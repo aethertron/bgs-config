@@ -200,14 +200,20 @@ mode "passthrough" {
 }
 bindsym $mod+Shift+u mode "passthrough"
 
+
 ########################################
-###       Xorg configuration here    ###
+###       Application config here    ###
 ###        (might want to move)      ###
 ########################################
-exec xinput set-prop 14 300 1
-exec xinput set-button-map 10 1 2 3
 
 # Start kmix to handle sound
 # exec kmix
 exec yakuake
 # Note: key mapping is done in .bash_profile right now
+
+########################################
+###       Local configuration here   ###
+### (Xorg, etc, might want to move)  ###
+########################################
+
+exec_always "fish -c 'if [ -f ~/.config/i3/local_config ]; ~/.config/i3/local_config; end'"
