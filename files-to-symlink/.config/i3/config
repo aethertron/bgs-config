@@ -39,6 +39,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym $mod+mod1+k kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -199,16 +200,12 @@ mode "passthrough" {
 }
 bindsym $mod+Shift+u mode "passthrough"
 
-bindsym $mod+mod1+k kill
-
-exec xinput set-prop 14 300 1
-
-# Start kmix to handle sound
-# exec kmix
-exec yakuake
-# Note: key mapping is done in .bash_profile right now
-
 ########################################
 ###       Xorg configuration here    ###
 ###        (might want to move)      ###
 ########################################
+exec xinput set-prop 14 300 1
+# Start kmix to handle sound
+# exec kmix
+exec yakuake
+# Note: key mapping is done in .bash_profile right now
