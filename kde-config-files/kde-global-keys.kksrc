@@ -1,17 +1,11 @@
 [ActivityManager][Global Shortcuts]
-switch-to-activity-3af95c90-33c9-4515-9ee5-c583fa7cf152=none
-
-[KDE Keyboard Layout Switcher][Global Shortcuts]
-Disable Touchpad=none
-Enable Touchpad=none
-Show System Activity=Ctrl+Esc
-Switch to Next Keyboard Layout=Ctrl+Alt+K
-Toggle Touchpad=none
-{74060fbd-5ba4-48b7-8ab8-4170395080d4}=none
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
+switch-to-activity-d9a07be8-f21e-44f0-ab6e-18ff761ffdfe=none
 
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
+
+[kded5][Global Shortcuts]
+Show System Activity=Ctrl+Esc
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
@@ -25,28 +19,28 @@ mute=Volume Mute
 run command=Meta+Space; Alt+F2; Search
 run command on clipboard contents=Alt+Shift+F2
 
-[ksmserver][Global Shortcuts]
-Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
-Lock Session=Meta+Ctrl+L; Screensaver
-Log Out=Ctrl+Alt+Del
-Log Out Without Confirmation=Ctrl+Alt+Shift+Del
-Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
-
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=none
 Decrease Opacity=none
+Disable Touchpad=none
+Enable Touchpad=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
 ExposeClass=Ctrl+F7
+Halt Without Confirmation=none
 Increase Opacity=none
 Invert Screen Colors=none
 Kill Window=Ctrl+Alt+Esc
+Lock Session=Meta+Ctrl+L
+Log Out=none
+Log Out Without Confirmation=none
 MoveMouseToCenter=Meta+F6
 MoveMouseToFocus=Meta+F5
 MoveZoomDown=Meta+Down
 MoveZoomLeft=none
 MoveZoomRight=none
 MoveZoomUp=none
+Reboot Without Confirmation=none
 Remove Window From Group=none
 Setup Window Shortcut=none
 Show Desktop=none
@@ -81,6 +75,7 @@ Switch to Desktop 7=none
 Switch to Desktop 8=none
 Switch to Desktop 9=none
 Switch to Next Desktop=Ctrl+Alt+Right
+Switch to Next Keyboard Layout=none
 Switch to Next Screen=none
 Switch to Previous Desktop=Ctrl+Alt+Left
 Switch to Previous Screen=none
@@ -92,6 +87,7 @@ Switch to Screen 4=none
 Switch to Screen 5=none
 Switch to Screen 6=none
 Switch to Screen 7=none
+Toggle Touchpad=none
 Toggle Window Raise/Lower=none
 Walk Through Desktop List=none
 Walk Through Desktop List (Reverse)=none
@@ -109,7 +105,7 @@ Walk Through Windows of Current Application Alternative=none
 Walk Through Windows of Current Application Alternative (Reverse)=none
 Window Above Other Windows=none
 Window Below Other Windows=none
-Window Close=Alt+F4
+Window Close=Alt+F4; Meta+Shift+K
 Window Fullscreen=none
 Window Grow Horizontal=none
 Window Grow Vertical=none
@@ -178,6 +174,8 @@ Window to Screen 7=none
 view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
+{4259ba16-fdcb-4336-bd40-45d8f612139d}=none
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 
 [org_kde_powerdevil][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
@@ -200,7 +198,7 @@ activate task manager entry 6=Meta+6
 activate task manager entry 7=Meta+7
 activate task manager entry 8=Meta+8
 activate task manager entry 9=Meta+9
-activate widget 14=Alt+F1
+activate widget 3=none
 clear-history=none
 clipboard_action=Ctrl+Alt+X
 cycleNextAction=none
@@ -214,6 +212,3 @@ show dashboard=Ctrl+F12
 show-barcode=none
 show-on-mouse-pos=none
 stop current activity=Meta+S
-
-[yakuake][Global Shortcuts]
-toggle-window-state=F12
