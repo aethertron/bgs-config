@@ -43,7 +43,7 @@ bindsym $mod+mod1+k kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-bindsym $mod+space exec dmenu_run
+bindsym $mod+space exec --no-startup-id "rofi -modi drun,window,run -show drun"
 
 # kill
 bindsym mod1+control+Escape --release exec --no-startup-id xkill
@@ -205,6 +205,8 @@ bindsym $mod+Shift+u mode "passthrough"
 ###        (might want to move)      ###
 ########################################
 exec xinput set-prop 14 300 1
+exec xinput set-button-map 10 1 2 3
+
 # Start kmix to handle sound
 # exec kmix
 exec yakuake
