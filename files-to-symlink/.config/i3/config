@@ -45,6 +45,9 @@ bindsym $mod+mod1+k kill
 bindsym $mod+d exec dmenu_run
 bindsym $mod+space exec --no-startup-id "rofi -modi drun,window,run -show drun"
 
+# swap window switch
+bindsym $mod+Tab exec --no-startup-id "rofi -show window"
+
 # kill
 bindsym mod1+control+Escape --release exec --no-startup-id xkill
 # not working!
