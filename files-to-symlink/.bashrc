@@ -11,7 +11,7 @@ cleanpath() {
 }
 
 # Add uniloc to path, pythonpath and manpath
-export PATH="$HOME/local/bin:$HOME/bin:$PATH"
+export PATH="$HOME/local/bin:$HOME/bin:$PATH:$HOME/.local/bin"
 PATH=$(cleanpath $PATH)
 
 # Python path configuration
