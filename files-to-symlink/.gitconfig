@@ -7,7 +7,7 @@
 	co = checkout
 	br = branch
 	ci = commit
-	lg = log -20 --oneline --decorate --graph --color
+	lg = log -20 --oneline --decorate --graph --color HEAD FETCH_HEAD
 	st = status
 [core]
 	editor = emacsclient -c --alternate-editor=nano
