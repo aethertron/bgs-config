@@ -1,17 +1,21 @@
 [ActivityManager][Global Shortcuts]
-switch-to-activity-d9a07be8-f21e-44f0-ab6e-18ff761ffdfe=none
+switch-to-activity-9de28776-1573-4fc1-8f9c-cffc618e00c0=none
 
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
 
-[kded5][Global Shortcuts]
+[kcm_touchpad][Global Shortcuts]
 Disable Touchpad=none
 Enable Touchpad=none
 Show System Activity=Ctrl+Esc
 Switch to Next Keyboard Layout=none
 Toggle Touchpad=none
-{4259ba16-fdcb-4336-bd40-45d8f612139d}=none
+{4abba9aa-4936-4dab-b6c8-9f912db7a734}=none
+{6d0321c1-5432-4654-a645-de64fa5e45ac}=none
+{b6896661-b91a-4b15-9776-e84f5c23c333}=Meta+Tab
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
+{d9fefd92-0a51-44ba-9414-753ffb50ed05}=none
+{e93242b5-27df-43ce-ae47-7cbeeda4bb26}=Meta+Space
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
@@ -22,7 +26,7 @@ mic_mute=Microphone Mute
 mute=Volume Mute
 
 [krunner][Global Shortcuts]
-run command=Meta+Space; Alt+F2; Search
+run command=Alt+Space; Alt+F2; Search
 run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
@@ -179,6 +183,14 @@ view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
 
+[mediacontrol][Global Shortcuts]
+mediavolumedown=none
+mediavolumeup=none
+nextmedia=Media Next
+playpausemedia=Media Play
+previousmedia=Media Previous
+stopmedia=Media Stop
+
 [org_kde_powerdevil][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
 Decrease Screen Brightness=Monitor Brightness Down
@@ -207,13 +219,10 @@ cycleNextAction=none
 cyclePrevAction=none
 edit_clipboard=none
 manage activities=Meta+Q
-next activity=Meta+Tab
-previous activity=Meta+Shift+Tab
+next activity=none
+previous activity=none
 repeat_action=Ctrl+Alt+R
 show dashboard=Ctrl+F12
 show-barcode=none
 show-on-mouse-pos=none
 stop current activity=Meta+S
-
-[yakuake][Global Shortcuts]
-toggle-window-state=F12
