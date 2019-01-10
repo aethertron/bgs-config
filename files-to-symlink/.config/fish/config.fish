@@ -1,8 +1,3 @@
-function fish_user_key_bindings
-    fish_default_key_bindings
-    bind \em beginning-of-line
-    bind \eK kill-whole-line
-end
 
 # add
 for path in ~/bin ~/local/bin ~/.local/bin
