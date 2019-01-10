@@ -13,3 +13,5 @@
 	editor = emacsclient -c --alternate-editor=nano
 [push]
 	default = simple
+[color]
+        ui = auto
