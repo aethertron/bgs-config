@@ -35,6 +35,8 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 ############################
 ### Interactive Section  ###
 ############################
@@ -82,3 +84,4 @@ shopt -s globstar               # turn on ** and **/ globing! (ex: echo **)
 
 # Chopping block
 [[ -f ~/.bash_chopping_block  ]] && . ~/.bash_chopping_block
+

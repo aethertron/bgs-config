@@ -16,3 +16,5 @@ source ~/uniloc/src/git-subrepo/.rc
 
 # Powerline highlighting
 source /usr/share/zsh/site-contrib/powerline.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
