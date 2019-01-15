@@ -8,8 +8,12 @@
 
 export TERMINAL=konsole
 
+# == Call bashrc file ==
+
 # Path stuff that we can get away with doing for every shell!! ==
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# == Junk that might come back again ==
 
 # Pyenv: might resurrect at some point
 # export PATH="$HOME/.pyenv/bin:$PATH"
