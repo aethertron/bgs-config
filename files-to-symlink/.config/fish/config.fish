@@ -11,4 +11,5 @@ if [ -f ~/.config/fish/local_config.fish ]
 end
 
 # env
-set --export EDITOR "emacsclient -c --alternate-editor=nano"
+set --export EDITOR vim
+set --export PAGER "less -R"
