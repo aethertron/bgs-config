@@ -13,3 +13,4 @@ end
 # env
 set --export EDITOR vim
 set --export PAGER "less -R"
+set --export PYTHONSTARTUP ~/.pythonrc
