@@ -2,6 +2,7 @@
 	email = william.stubler@gmail.com
 	name = William Stubler
 [core]
+	editor = emacsclient -nw --alternate-editor=nano
 	excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout
@@ -9,8 +10,6 @@
 	ci = commit
 	lg = log -20 --oneline --decorate --graph --color HEAD FETCH_HEAD
 	st = status
-[core]
-	editor = emacsclient -c --alternate-editor=nano
 [push]
 	default = simple
 [color]
