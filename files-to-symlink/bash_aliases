@@ -21,8 +21,3 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 
-# Emacs related
-alias ec='emacsclient -nc'
-alias em="emacsclient -n"
-alias vim=emacs
-alias vi=emacs

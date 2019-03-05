@@ -41,13 +41,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Functions
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
 # Environment variables commonly used by programs
-export EDITOR='emacsclient -c --alternate-editor=nano'
 
 # Colors
 #  set use_color if you want color, if not, can set to empty string or unset
@@ -79,3 +73,4 @@ shopt -s globstar               # turn on ** and **/ globing! (ex: echo **)
 # Chopping block
 [[ -f ~/.bash_chopping_block  ]] && . ~/.bash_chopping_block
 
+# Emacs related
