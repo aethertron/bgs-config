@@ -2,6 +2,45 @@ Cross-machine linux configuration
 Kept on a public github repository
 As of late on a simplification streak
 
+It's now template based
+
+common: common to everything
+centos7: centos 7 machines (work, etc.)
+manjaro-i3: manjaro i3 machines
+
+#### Common     #####
+login shell:
+
+#### CentOs 7   #####
+login shell:       bash
+shell used mainly: fish, be it user local or otherwise
+teminal emulator:  kitty
+window manager:    i3wm
+
+### CentOs 7 Red ####
+login shell:       bash
+shell used mainly: fish
+terminal emulator: konsole
+window manager:    kde plasma
+
+
+### CentOs 7 Vanilla ###
+login shell:       bash
+shell used mainly: bash
+terminal emulator: konsole
+window manager:    kde plasma
+
+
+#### Manjaro I3  #####
+login shell: bash, this might change to fish
+
+
+
+
+
+
+
+
 Only supporting one shell as the login shell: `bash`!
 
 Will probably host fish config, however we assume bash is the login shell
