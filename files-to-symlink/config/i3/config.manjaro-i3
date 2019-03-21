@@ -53,7 +53,7 @@ bindsym $mod+mod1+k kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-bindsym $mod+space exec --no-startup-id "rofi -modi drun,window,run -show drun"
+bindsym $mod+space exec --no-startup-id "rofi -modi drun,run,window -show drun"
 
 # swap window switch
 bindsym $mod+Tab exec --no-startup-id "rofi -show window"
