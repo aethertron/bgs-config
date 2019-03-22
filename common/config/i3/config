@@ -155,9 +155,8 @@ bindsym $mod+Shift+z move scratchpad
 # Show scratchpad
 bindsym $mod+z scratchpad show
 
-# Lock the screen
-# bindsym $mod+Ctrl+l exec --no-startup-id xscreensaver-command -lock
-bindsym $mod+Ctrl+l exec --no-startup-id i3lock
+# Lock the screen -> leave this to the specific platform!
+
 
 # Volume controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 1dB+ unmute
