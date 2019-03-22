@@ -41,7 +41,6 @@ echo "Writing to $dest"
 # write directories
 if not set -q dryrun
    echo "Create directories and files"
-   rm -rf $dest
    mkdir -p $verbose (echo $dest/.$files | xargs dirname | sort -u)
    touch $dest/.$files
 else
