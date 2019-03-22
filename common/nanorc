@@ -228,12 +228,17 @@
 # bind M-W nowrap main
 # bind M-A casesens search
 bind ^S whereis main
+bind ^R wherewas main
 bind M-f nextword main
 bind M-b prevword main
+bind M-d cutwordright main
+bind M-k cutwordleft main
 bind M-> lastline main
 bind M-< firstline main
 bind ^V nextpage main
 bind M-v prevpage main
+bind ^_ undo main
+bind M-/ redo main
 # bind M-d cutnextword main  # what's the function??
 
 ## Set this if your backspace key sends delete most of the time (2.1.3+)
