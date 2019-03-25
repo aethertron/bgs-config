@@ -9,27 +9,27 @@ centos7: centos 7 machines (work, etc.)
 manjaro-i3: manjaro i3 machines
 
 #### Common     #####
-login shell:
+login shell:       bash, for conveniece, now everyone uses bash
 
-#### CentOs 7   #####
+#### CentOs 7    #####
 login shell:       bash
 shell used mainly: fish, be it user local or otherwise
 teminal emulator:  kitty
 window manager:    i3wm
 
-### CentOs 7 Red ####
+### CentOs 7 Epel ####
 login shell:       bash
 shell used mainly: fish
 terminal emulator: konsole
 window manager:    kde plasma
-
+notes:             Plain CentOs 7 + whatever is in the epel repo
 
 ### CentOs 7 Vanilla ###
 login shell:       bash
 shell used mainly: bash
 terminal emulator: konsole
 window manager:    kde plasma
-
+notes:             Plain CentOs 7
 
 #### Manjaro I3  #####
 login shell: bash, this might change to fish
