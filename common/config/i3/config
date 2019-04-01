@@ -44,7 +44,7 @@ bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym $mod+mod1+k kill
+bindsym $mod+Ctrl+k kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
