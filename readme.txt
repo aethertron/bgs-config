@@ -2,16 +2,9 @@ Cross-machine linux configuration
 Kept on a public github repository
 As of late on a simplification streak
 
-It's now template based
+One directory per machine, use diff to sync them, crude but workable!
 
-common: common to everything
-centos7: centos 7 machines (work, etc.)
-manjaro-i3: manjaro i3 machines
-
-#### Common     #####
-login shell:       bash, for conveniece, now everyone uses bash
-
-#### CentOs 7    #####
+#### CentOs 7 Loaded  #####
 login shell:       bash
 shell used mainly: fish, be it user local or otherwise
 teminal emulator:  kitty
