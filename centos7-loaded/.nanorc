@@ -1,3 +1,6 @@
+## Configuration for Nano 3.2
+##   using pretty much only on centos7-loaded
+
 ## Sample initialization file for GNU nano.
 ##
 ## Please note that you must have configured nano with --enable-nanorc
