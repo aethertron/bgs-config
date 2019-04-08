@@ -8,4 +8,5 @@ function fish_user_key_bindings
     bind \e\cb backward-bigword
     bind \e\cd kill-bigword
     bind \e\ch backward-kill-bigword
+    bind \e\ck backward-kill-bigword
 end
