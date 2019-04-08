@@ -10,6 +10,9 @@ shell used mainly: fish, be it user local or otherwise
 teminal emulator:  kitty
 window manager:    i3wm
 
+#### CentOs 7 Semiloaded ####
+midway between loaded and epel, has some things, in transition
+
 ### CentOs 7 Epel ####
 login shell:       bash
 shell used mainly: fish
