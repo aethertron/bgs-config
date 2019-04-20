@@ -7,7 +7,7 @@ for path in ~/bin ~/local/bin ~/.local/bin
 end;
 
 # env
-set --export EDITOR vim
+set --export EDITOR nano
 set --export PAGER "less -R"
 set --export PYTHONSTARTUP ~/.pythonrc
 
