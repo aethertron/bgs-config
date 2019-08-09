@@ -46,7 +46,7 @@ else:
     if args.output_num < 0:
         # subtract one to omit the current cmd line
         args.output_num = len(lines) + args.output_num
-    start, end = int(lines[args.output_num - 1]), int(lines([args.output_num])
+    start, end = int(lines[args.output_num - 1]), int(lines[args.output_num])
     count = end - start
     ff.seek(0)
     cmd = 'tr {} {} | tail -n +{} | head -n {}'.format(CMD_STR, CMD_SUB, start, count)
