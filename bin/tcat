@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+'''
+python 2/3
+"tmux cat"
+let's you cat tmux panes
+can select specific command outputs
+'''
+
+import argparse
+import sys
+import subprocess
+from tempfile import TemporaryFile
+
+HISTORY_LIMIT = 100000
+CMD_STR = '">>"'
+CMD_SUB = '\$\$' # so tcat doesn't get confused
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-t', '--target-pane', help="[[SESSION:]WINDOW.]PANE")
+parser.add_argument('-S' , '--start-line')
+parser.add_argument('-E', '--end-line')
+parser.add_argument('-w', '--whole-buffer', action='store_true')
+parser.add_argument('-o', '--output-num', nargs='?', type=int, const=-1)
+args = parser.parse_args()
+if args.output_num:
+    args.whole_buffer = True
+assert not all([args.start_line, args.end_line, args.whole_buffer])
+oargs = ['tmux', 'capture-pane', '-p']
+if args.target_pane:
+    oargs.extend(['-t', args.target_pane])
+if args.whole_buffer:
+    oargs.extend(['-S', str(-HISTORY_LIMIT)])
+else:
+    if args.start_line:
+        oargs.extend(['-S', args.start_line])
+    if args.end_line:
+        oargs.extend(['-E', args.end_line])
+if not args.output_num:
+    subprocess.call(oargs)
+else:
+    ff = TemporaryFile()
+    subprocess.call(oargs, stdout=ff)
+    ff.seek(0)
+    cmd = 'grep -F -e {} -n | cut -d: -f1'.format(CMD_STR)
+    lines = subprocess.check_output(cmd, stdin=ff, shell=True).splitlines()
+    if args.output_num < 0:
+        # subtract one to omit the current cmd line
+        args.output_num = len(lines) + args.output_num
+    start, end = int(lines[args.output_num - 1]), int(lines([args.output_num])
+    count = end - start
+    ff.seek(0)
+    cmd = 'tr {} {} | tail -n +{} | head -n {}'.format(CMD_STR, CMD_SUB, start, count)
+    print("==== Outputting Command {} =====".format(args.output_num))
+    sys.stdout.flush()
+    subprocess.call(cmd, shell=True, stdin=ff, stderr=open('/dev/null', 'wb'))
