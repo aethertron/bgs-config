@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 plt.ion()
+=======
+>>>>>>> ccf753d... more improvement to man, pythonrc doesnt load a ton of sense anymore
 from importlib import reload
