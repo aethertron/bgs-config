@@ -2,10 +2,6 @@
 Configuration example for ``ptpython``.
 
 Copy this file to ~/.ptpython/config.py
-
-url: 
-https://raw.githubusercontent.com/prompt-toolkit/ptpython/master/examples/ptpython_config/config.py
-
 """
 from __future__ import unicode_literals
 from prompt_toolkit.filters import ViInsertMode
