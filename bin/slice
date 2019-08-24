@@ -1,0 +1,53 @@
+#!/usr/bin/python
+'''
+grab specific parts of a file
+'''
+import argparse
+import re
+import sys
+import tempfile
+
+def parse_intervals(vals):
+    '''
+    map list of intervals to the individual values
+    - or .. can be used to denote an interval
+    1,10-15,25..30,-1 --> 1,10,11,12,13,14,15,25,26,27,28,29,30,-1
+    note intervals are inclusive
+    '''
+    elems = []
+    for val in vals.strip().split(','):
+	res = re.match('^\s*(-?[0-9]+)\s*(-|\.\.)\s*(-?[0-9]*)?\s*$', val)
+	if res:
+            beg, _mark, end = res.groups()
+            if len(end) == 0:
+                end = -1
+            elems.extend(range(int(beg), int(end) + 1))
+        else:
+            res = re.match('^\s*(-?[0-9]+)\s*$', val)
+            if res:
+                elems.append(int(res.groups()[0]))
+            else:
+                raise ValueError("Couldn't parse!")
+    return elems
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('lines',)
+parser.add_argument('input', nargs='?', type=argparse.FileType('r'), default=sys.stdin)
+args = parser.parse_args()
+args.lines = parse_intervals(args.lines)
+# get number of lines
+ff = tempfile.TemporaryFile()
+for num_lines, line in enumerate(args.input):
+   ff.write(line)
+num_lines += 1
+ff.seek(0)
+# map negative to positive values
+for ii in range(len(args.lines)):
+    if args.lines[ii] < 0:
+        args.lines[ii] += (num_lines + 1)  # -1 +1  + num_lines = num_lines, -num_lines + 1 + num_lines = 1
+#
+for offset, line in enumerate(ff):
+    line = line.strip()
+    if (offset + 1) in args.lines:
+        print(line)
