@@ -45,7 +45,7 @@
 # set const
 
 ## Use cut to end of line by default.
-# set cut
+set cut
 
 ## Set the line length for wrapping text and justifying paragraphs.
 ## If fill is 0 or less, the line length will be the screen width less
@@ -60,7 +60,7 @@
 ## searches.  They cannot contain blank characters.  The former set must
 ## come before the latter set, and both must be in the same order.
 ##
-# set matchbrackets "(<[{)>]}"
+set matchbrackets "(<[{)>]}"
 
 ## Use the blank line below the titlebar as extra editing space.
 # set morespace
@@ -70,7 +70,7 @@
 ## double click), and execute shortcuts.  The mouse will work in the X
 ## Window System, and on the console when gpm is running.
 ##
-# set mouse
+set mouse
 
 ## Allow multiple file buffers (inserting a file will put it into a
 ## separate buffer).  You must have configured with --enable-multibuffer
@@ -108,7 +108,7 @@
 ## punctuation, optionally followed by closing brackets, can end
 ## sentences.
 ##
-# set punct "!.?"
+set punct "!.?"
 
 ## Do quick statusbar blanking.  Statusbar messages will disappear after
 ## 1 keystroke instead of 26.  Note that "const" overrides this.
@@ -118,7 +118,7 @@
 ## The email-quote string, used to justify email-quoted paragraphs.
 ## This is an extended regular expression if your system supports them,
 ## otherwise a literal string.  Default:
-# set quotestr "^([ 	]*[#:>\|}])+"
+set quotestr "^([ 	]*[#:>\|}])+"
 ## if you have extended regular expression support, otherwise:
 # set quotestr "> "
 
@@ -136,7 +136,7 @@
 ## will jump to that beginning (either forwards or backwards).  If the
 ## cursor is already at that position, it will jump to the true
 ## beginning of the line.
-# set smarthome
+set smarthome
 
 ## Use smooth scrolling as the default.
 # set smooth
@@ -153,10 +153,10 @@
 # set suspend
 
 ## Use this tab size instead of the default; it must be greater than 0.
-# set tabsize 8
+set tabsize 4
 
 ## Convert typed tabs to spaces.
-# set tabstospaces
+set tabstospaces
 
 ## Save automatically on exit, don't prompt.
 # set tempfile
