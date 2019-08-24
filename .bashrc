@@ -1,30 +1,5 @@
 #!/bin/bash
 
-############################
-### Main        Section  ###
-############################
-
-cleanpath() {
-    p=:
-    for d in $(IFS=:; echo $*); do [[ -n $d ]] && { [[ $p == *:$d:* ]] || p+=$d:; }; done
-    echo ${p:1:${#p}-2}
-}
-
-# Add uniloc to path, pythonpath and manpath
-export PATH="$HOME/local/bin:$HOME/bin:$PATH:$HOME/.local/bin"
-PATH=$(cleanpath $PATH)
-
-# Man path configuration
-export MANPATH="/usr/local/share/man/:$MANPATH"
-export MANPATH="/usr/share/man/:$MANPATH"
-export MANPATH="$HOME/local/share/man/:$MANPATH"
-MANPATH=$(cleanpath $MANPATH)
-
-unset cleanpath
-
-# Local file
-[[ -f ~/.bashrc_local ]] && . ~/.bashrc_local
-
 if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
 	return
@@ -32,14 +7,26 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-############################
-### Interactive Section  ###
-############################
-
 # Additional aliases and functions here
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+
+# LS related
+alias ll='ls -lh --color=auto --group-directories-first'
+alias lla='ls -alh --color=auto --group-directories-first'
+alias ls='ls --color=auto --group-directories-first'
+alias ld='ls -d */'
+alias lf='find . -maxdepth 1 -type f  | cut -d / -f 2  | xargs ls --color=auto'
+
+# Grep (note GREP_COLOR is deprecated so we need this silly aliases)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Other
+alias less='less -RX'                     # keep text around by default
+alias na='nano'
+
+# Bash shell (non-exported) variables
+PROMPT_DIRTRIM=3  # number of directories to show
 
 # Environment variables commonly used by programs
 

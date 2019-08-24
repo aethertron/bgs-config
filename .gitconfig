@@ -2,7 +2,6 @@
 	email = william.stubler@gmail.com
 	name = William Stubler
 [core]
-	editor = emacsclient -nw --alternate-editor=vim
 	excludesfile = ~/.gitignore_global
 [alias]
 	co = checkout

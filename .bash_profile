@@ -5,8 +5,10 @@
 # == Profile-only Stuff! ==
 
 # I3-related
-
 export TERMINAL=konsole
+
+# Env Variables
+export SHELL=/bin/bash
 
 # == Call bashrc file ==
 
