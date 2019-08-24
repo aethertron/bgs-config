@@ -1,1 +1,43 @@
-/bundles
+# general ignores
+*.swp
+
+# user dirs
+#  ignore most dirs that start with a-z
+/[a-zA-Z]*
+#  don't ignore bin though
+!/bin
+
+# config dirs
+/.cache/
+/.cddb/
+/.dbus/
+/.dropbox-dist/
+/.dropbox/
+/.gconf/
+/.gnupg/
+/.kde/
+/.local/
+/.mozilla/
+/.pki/
+/.ssh/
+/.thunderbird/
+
+# config files
+/.Xauthority
+/.bash_history
+/.face
+/.face.icon
+/.fonts.conf
+/.gtkrc-2.0
+/.lesshst
+/.profile
+/.python_history
+/.recently-used
+/.selected_editor
+/.sudo_as_admin_successful
+/.toprc
+/.xsel.log
+/.xsession-errors
+
+
+
