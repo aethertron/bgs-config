@@ -14,7 +14,14 @@
 "\C-a": beginning-of-line
 "\em": beginning-of-line
 
+# Convenient Killing
+"\ek": backward-kill-word
+"\e\C-k": shell-backward-kill-word
 "\eK": kill-whole-line
+
+# Move by shell word
+"\e\C-b": shell-backward-word
+"\e\C-f": shell-forward-word
 
 "\e\C-?": backward-kill-word
 
