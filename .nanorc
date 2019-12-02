@@ -1,4 +1,4 @@
-## Sample initialization file for GNU nano.
+## Config for nano 4.3 (cur ver for kubuntu 19.10 as of Dec 2019)
 ##
 ## Please note that you must have configured nano with --enable-nanorc
 ## for this file to be read!  Also note that this file should not be in
@@ -45,7 +45,7 @@
 # set const
 
 ## Use cut to end of line by default.
-set cut
+set cutfromcursor
 
 ## Set the line length for wrapping text and justifying paragraphs.
 ## If fill is 0 or less, the line length will be the screen width less
