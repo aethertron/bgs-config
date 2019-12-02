@@ -25,6 +25,7 @@ alias fgrep='fgrep --color=auto'
 alias less='less -RX'                     # keep text around by default
 alias na='nano'
 alias diffstat='diffstat -C'
+alias spectacle='spectacle -r --background  --nonotify -o '
 
 # Bash shell (non-exported) variables
 PROMPT_DIRTRIM=3  # number of directories to show
