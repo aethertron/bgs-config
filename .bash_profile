@@ -11,17 +11,16 @@ export TERMINAL=konsole
 export SHELL=/bin/bash
 
 # Initialization, mainly for user programs (conda, etc)
-[[ -f ~/anaconda3/etc/profile.d/conda.sh ]] && source ~/anaconda3/etc/profile.d/conda.sh
+if [[ -f ~/anaconda3/etc/profile.d/conda.sh ]]; then
+    source ~/anaconda3/etc/profile.d/conda.sh
+fi
 
 # == Call bashrc file ==
 
 # Path stuff that we can get away with doing for every shell!! ==
-[[ -f ~/.bashrc ]] && source ~/.bashrc
+if [[ -f ~/.bashrc ]]; then
+    source ~/.bashrc
+fi
 
-# == Junk that might come back again ==
 
-# Pyenv: might resurrect at some point
-# export PATH="$HOME/.pyenv/bin:$PATH"
-# no pyenv for now
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+
