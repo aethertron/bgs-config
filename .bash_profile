@@ -9,6 +9,7 @@ export TERMINAL=konsole
 
 # Env Variables
 export SHELL=/bin/bash
+export EDITOR='emacs -Q -nw'
 
 # Initialization, mainly for user programs (conda, etc)
 if [[ -f ~/anaconda3/etc/profile.d/conda.sh ]]; then

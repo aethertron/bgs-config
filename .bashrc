@@ -14,7 +14,8 @@ alias ll='ls -lh --color=auto --group-directories-first'
 alias lla='ls -alh --color=auto --group-directories-first'
 alias ls='ls --color=auto --group-directories-first'
 alias ld='ls -d */'
-alias lf='find . -maxdepth 1 -type f  | cut -d / -f 2  | xargs ls --color=auto'
+alias lf='find . -maxdepth 1 -type f  | cut -d / -f 2  | xargs ls --color=auto --group-directories-first'
+
 # Grep (note GREP_COLOR is deprecated so we need this silly aliases)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -25,10 +26,14 @@ alias ec='emacsclient'
 alias et='emacs -Q -nw'
 # Other
 alias less='less -RX'                     # keep text around by default
+alias duh='du -h --time --max-depth 1'
 alias na='nano'
 alias diffstat='diffstat -C'
 alias spectacle='spectacle -r --background  --nonotify -o '
-alias open='xdg-open "$@"'
+alias open='xdg-open'
+alias et='emacs -Q -nw'
+alias en='emacsclient -n'
+alias ec='emacsclient'
 
 # Bash shell (non-exported) variables
 PROMPT_DIRTRIM=3  # number of directories to show
