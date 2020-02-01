@@ -9,6 +9,7 @@ export TERMINAL=konsole
 
 # Env Variables
 export SHELL=/bin/bash
+export EDITOR='emacs -Q -nw'
 
 # == Call bashrc file ==
 

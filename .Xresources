@@ -1,5 +1,6 @@
-emacs.font: DejaVu Sans Mono-08
-emacs-25.1.font: DejaVu Sans Mono-08
+emacs.font: DejaVu Sans Mono-11
+emacs.background: darkblue
+emacs.foreground: gray
 
 urxvt*foreground: white
 urxvt*background: black
