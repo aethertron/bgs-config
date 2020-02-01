@@ -5,9 +5,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# Environment Variables for Interactive-Mode
-export EDITOR='emacsclient'
-
 # 1. Additional aliases and functions here
 # LS related
 alias ll='ls -lh --color=auto --group-directories-first'
