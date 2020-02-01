@@ -1,3 +1,6 @@
+set show-all-if-unmodified on
+set visible-stats on
+
 "\C-p":history-search-backward
 "\C-n":history-search-forward
 
