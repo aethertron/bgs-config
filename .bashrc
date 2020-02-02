@@ -28,7 +28,7 @@ alias na='nano'
 alias diffstat='diffstat -C'
 alias spectacle='spectacle -r --background  --nonotify -o '
 alias open='xdg-open'
-alias et='emacs -Q -nw'
+alias et='EMACS_HEAVY= emacs -nw'
 alias en='emacsclient -n'
 alias ec='emacsclient'
 
