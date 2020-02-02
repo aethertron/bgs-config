@@ -1,13 +1,23 @@
-
-
 # dirs
 /Clementine/
+/Google/
+/Unknown Organization/
+/akonadi-firstrunrc
+/akonadi-migrationrc
+/akonadi/
+/akonadi_akonotes_resource_0rc
+/akonadi_contacts_resource_0rc
+/akonadi_ical_resource_0rc
+/akonadi_indexing_agentrc
+/akonadi_maildir_resource_0rc
 /autostart/
 /cantata/
 /dconf/
+/easytag/
 /gtk-3.0/
 /kdeconnect/
 /libaccounts-glib/
+
 # TODO: anything in libreoffice we can track?
 /libreoffice/
 /mpd/
@@ -16,19 +26,19 @@
 /session/
 /vlc/
 
-
-
 # files
 /QtProject.conf
 /Trolltech.conf
 /akregatorrc
+/arkrc
 /baloo*
 /bluedevilglobalrc
 /bluedevilglobalrc.bZ1086
 /discoverrc
-# be nice to track dolphin 
-/dolphinrc  
+/drkonqirc
 /emaildefaults
+/emailidentities
+/filetypesrc
 /gtkrc
 /gtkrc-2.0
 /gwenviewrc
@@ -38,15 +48,18 @@
 /kactivitymanagerd-statsrc
 /kactivitymanagerd-switcher
 /kactivitymanagerdrc
+/kamosorc
 /katemetainfos
 /katepartrc
 /katerc
 /kateschemarc
 /katevirc
+/kcalcrc
 /kcminputrc
 /kcmshell5rc
 /kconf_updaterc
 /kdebugrc
+/kded5rc
 /kded_device_automounterrc
 /kdeglobals
 /kfontinstuirc
@@ -55,12 +68,11 @@
 /khotkeysrc
 /kiorc
 /kmail2rc
+/kmailsearchindexingrc
 /kmixrc
 /knfsshare
 /knotifyrc
 /kolourpaintrc
-# be nice to track konsole
-/konsolerc
 /korgacrc
 /krunnerrc
 /kscreenlockerrc
@@ -71,31 +83,36 @@
 /kwalletrc
 /kwinrc
 /kwinrulesrc
+/mimeapps.list
 /muonrc
 /okularrc
+/phishingurlrc
 /plasma-localerc
 /plasma-nm
 /plasma-org.kde.plasma.desktop-appletsrc
+/plasmanotifyrc
 /plasmarc
 /plasmashellrc
 /powerdevilrc
 /powermanagementprofilesrc
 /print-manager
+/soffice.binrc
+/specialmailcollectionsrc
 /spectaclerc
 /startupconfig
 /startupconfigfiles
 /startupconfigkeys
 /systemmonitorrc
 /systemsettingsrc
+/tabletprofilesrc
 /touchpadrc
 /trashrc
 /user-dirs.dirs
 /user-dirs.locale
+/wacomtablet-kderc
 /webengineurlinterceptoradblockrc
 /yakuakerc
 
-
-
-
-
-
+# TO-DO: track konsole and dolphine?
+/konsolerc
+/dolphinrc  

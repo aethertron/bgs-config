@@ -10,11 +10,15 @@
 # config dirs
 /.cache/
 /.cddb/
+/.conda/
 /.dbus/
 /.dropbox-dist/
 /.dropbox/
+/.emacs.d/
 /.gconf/
 /.gnupg/
+/.googleearth/
+/.ipython/
 /.kde/
 /.local/
 /.mozilla/
