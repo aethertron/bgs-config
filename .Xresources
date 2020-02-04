@@ -1,6 +1,20 @@
-emacs*.font: DejaVu Sans Mono-11
-emacs*.background: darkblue
-emacs*.foreground: gray
+Emacs.Font: DejaVu Sans Mono-11
+Emacs.default.attributeBackground: darkblue
+Emacs.default.attributeForeground: gray
+Emacs*Background:       #fcfcfc
+Emacs*Dialog*background:        #eff0f1
+Emacs*Dialog*foreground:        #232627
+Emacs*Foreground:       gray
+Emacs*XlwScrollBar.Background:  #eff0f1
+Emacs*XlwScrollBar.Foreground:  #232627
+Emacs*backgroundToolBarColor:   #eff0f1
+Emacs*bottomToolBarShadowColor: #eff0f1
+Emacs*menubar*background:       #eff0f1
+Emacs*menubar*foreground:       #232627
+Emacs*popup*Background: #eff0f1
+Emacs*popup*Foreground: #232627
+Emacs*toolBarShadowThickness:   0
+Emacs*topToolBarShadowColor:    #eff0f1
 
 urxvt*foreground: white
 urxvt*background: black
