@@ -13,7 +13,7 @@ export EDITOR='EMACS_HEAVY= emacs -nw'
 
 # Emacs configuration
 # opt into heavy-duty version of my emacs config
-EMACS_HEAVY=1
+export EMACS_HEAVY=1
 
 # Initialization, mainly for user programs (conda, etc)
 if [[ -f ~/anaconda3/etc/profile.d/conda.sh ]]; then
@@ -24,8 +24,6 @@ fi
 if [[ -d ~/local/bin && ! PATH =~ .*~/local/bin.* ]]; then
     PATH=~/local/bin:$PATH
 fi
-
-xrdb ~/.Xresources
 
 # == Call bashrc file ==
 
