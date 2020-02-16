@@ -73,12 +73,12 @@ if [[ -n $use_color ]]; then
     CYAN="\[$(tput setaf 6)\]"
     MAGENTA="\[$(tput setaf 7)\]"
     GRAY="\[$(tput setaf 8)\]"
+    BABY="\[$(tput setaf 10)\]"
     BOLD="\[$(tput bold)\]"
     RESET="\[$(tput sgr0)\]"
-    # export PS1="${GREEN}my prompt${RESET}> "
-
+    
     if [[ ${EUID} != 0 ]] ; then
-	PS1="${GRAY}\t${RESET} \w >> "
+	PS1="${GRAY}\t${RESET} \w ${BABY}>> ${RESET}"
     else
 	PS1='\[\033[01;32m\][\t]\[\033[00m\]\# '
     fi
