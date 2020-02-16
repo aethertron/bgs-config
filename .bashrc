@@ -28,10 +28,18 @@ alias ec='emacsclient'
 alias en='emacsclient -n'
 alias et="$EDITOR"
 # Other
+alias echo='echo -e'
 alias less='less -RX'                     # keep text around by default
 alias duh='du -h --time --max-depth 1'
 alias diffstat='diffstat -C'
-alias open='xdg-open'
+
+open () {
+    if [[ "$1" =~ .*.xlsx ]]; then
+	libreoffice "$@" &> /dev/null
+    else
+	xdg-open "$@"
+    fi
+}
 
 # Bash shell (non-exported) variables
 PROMPT_DIRTRIM=3  # number of directories to show
