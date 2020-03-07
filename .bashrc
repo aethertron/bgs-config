@@ -27,6 +27,7 @@ alias fgrep='fgrep --color=auto'
 alias ec='emacsclient'
 alias en='emacsclient -n'
 alias et="$EDITOR"
+alias eq="emacs -Q -nw"
 # Other
 alias echo='echo -e'
 alias less='less -RX'                     # keep text around by default
@@ -134,7 +135,8 @@ for profile in "${profiles[@]}"; do
     fi
 done
 
-if [[ -f ~/anaconda3/etc/profile.d/conda.sh ]]; then
-    source ~/anaconda3/etc/profile.d/conda.sh
+if [[ -f ~/anaconda3/bin/conda ]]; then
+    eval "$(/home/wgs/anaconda3/bin/conda shell.bash hook)"
+    # run conda activate to activate base
 fi
 
