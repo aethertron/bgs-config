@@ -137,7 +137,8 @@ for profile in "${profiles[@]}"; do
     fi
 done
 
-if [[ -f ~/anaconda3/etc/profile.d/conda.sh ]]; then
-    source ~/anaconda3/etc/profile.d/conda.sh
+if [[ -f ~/anaconda3/bin/conda ]]; then
+    eval "$(/home/wgs/anaconda3/bin/conda shell.bash hook)"
+    # run conda activate to activate base
 fi
 
