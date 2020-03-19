@@ -9,6 +9,7 @@ fi
 # -----------------------------------------
 
 export EDITOR='EMACS_HEAVY= emacs -nw'
+export PAGER='less -XR'
 
 # Aliases and functions
 # ---------------------
@@ -27,11 +28,13 @@ alias fgrep='fgrep --color=auto'
 alias ec='emacsclient'
 alias en='emacsclient -n'
 alias et="$EDITOR"
+alias eq="emacs -Q -nw"
 # Other
 alias echo='echo -e'
 alias less='less -RX'                     # keep text around by default
 alias duh='du -h --time --max-depth 1'
 alias diffstat='diffstat -C'
+alias less='less -XR'
 
 open () {
     if [[ "$1" =~ .*.xlsx ]]; then
