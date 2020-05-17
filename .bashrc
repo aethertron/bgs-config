@@ -38,7 +38,7 @@ alias less='less -XR'
 
 open () {
     if [[ "$1" =~ .*.xlsx ]]; then
-	libreoffice "$@" &> /dev/null
+	libreoffice "$@" &> /dev/null &
     else
 	xdg-open "$@"
     fi
