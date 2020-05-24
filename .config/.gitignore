@@ -10,11 +10,15 @@
 /akonadi_ical_resource_0rc
 /akonadi_indexing_agentrc
 /akonadi_maildir_resource_0rc
+/ardour5/
 /autostart/
 /cantata/
+/cef_user_data/
 /dconf/
 /Dharkael/
 /easytag/
+/kazam/
+/procps/
 /geany/
 /gtk-3.0/
 /kdeconnect/
@@ -41,6 +45,7 @@
 /emaildefaults
 /emailidentities
 /filetypesrc
+/flameshotrc
 /gtkrc
 /gtkrc-2.0
 /gwenviewrc
@@ -116,6 +121,8 @@
 /wacomtablet-kderc
 /webengineurlinterceptoradblockrc
 /yakuakerc
+/vlcrc
+/zoomus.conf
 
 # TO-DO: track konsole and dolphine?
 /konsolerc

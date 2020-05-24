@@ -8,6 +8,7 @@
 !/bin
 
 # config dirs
+/.audacity-data/
 /.cache/
 /.cddb/
 /.conda/
@@ -24,20 +25,28 @@
 /.mozilla/
 /.pki/
 /.ssh/
+/.steam/
 /.thunderbird/
+/.zoom/
 
-# config files
+# Config Files
+# ------------
 /.Xauthority
+# Xmodmap: ignore bc it should be machine-specific
+/.Xmodmap
 /.bash_history
 /.face
 /.face.icon
 /.fonts.conf
 /.gtkrc-2.0
 /.lesshst
+/.pulse-cookie
 /.profile
 /.python_history
 /.recently-used
 /.selected_editor
+/.steampath
+/.steampid
 /.sudo_as_admin_successful
 /.toprc
 /.xsel.log
