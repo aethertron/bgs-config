@@ -16,8 +16,9 @@ Emacs*popup*Foreground: #232627
 Emacs*toolBarShadowThickness:   0
 Emacs*topToolBarShadowColor:    #eff0f1
 
-urxvt*foreground: white
-urxvt*background: black
+URxvt*foreground: white
+URxvt*background: black
+URxvt*font: 9x15
 
 *color0:  #2E3436
 *color1:  #a40000
