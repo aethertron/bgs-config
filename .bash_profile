@@ -20,8 +20,8 @@ export MOZ_USE_XINPUT2=1
 # Path configuration
 # ------------------
 
-if [[ -d ~/local/bin && ! PATH =~ .*~/local/bin.* ]]; then
-    PATH=~/local/bin:$PATH
+if [[ -d ~/local/bin && "$PATH" != *~/local/bin* ]]; then
+    PATH=~/local/bin:"$PATH"
 fi
 
 # Call bashrc file
