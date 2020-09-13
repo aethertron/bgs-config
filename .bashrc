@@ -5,13 +5,13 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-# Environment Variabls for Interactive Mode
+# [Environment Variabls for Interactive Mode]
 # -----------------------------------------
 
 export EDITOR='EMACS_HEAVY= emacs -nw'
 export PAGER='less -XR'
 
-# Aliases and functions
+# [Aliases and functions]
 # ---------------------
 
 # LS related
@@ -20,10 +20,6 @@ alias lla='ls -alh --color=auto --group-directories-first'
 alias ls='ls --color=auto --group-directories-first'
 alias ld='ls -d */'
 alias lf='find . -maxdepth 1 -type f  | cut -d / -f 2  | xargs ls --color=auto --group-directories-first'
-# Grep (note GREP_COLOR is deprecated so we need these silly aliases)
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
 # Emacs
 alias ec='emacsclient'
 alias en='emacsclient -n'
@@ -31,10 +27,14 @@ alias et="$EDITOR"
 alias eq="emacs -Q -nw"
 # Other
 alias echo='echo -e'
-alias less='less -RX'                     # keep text around by default
+alias less='less -RS'		# truncate lines and allow for scrolling
 alias duh='du -h --time --max-depth 1'
 alias diffstat='diffstat -C'
-alias less='less -XR'
+alias rg='rg -S'		# turn on smart-search by default
+# Grep (note GREP_COLOR is deprecated so we need these silly aliases)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 open () {
     if [[ "$1" =~ .*.xlsx ]]; then
@@ -47,8 +47,7 @@ open () {
 # Bash shell (non-exported) variables
 PROMPT_DIRTRIM=3  # number of directories to show
 
-
-# Colors
+# [Colors]
 # ------
 
 #  Set use_color if you want color even if TERM is not set appropriately!
@@ -95,7 +94,7 @@ else
 fi
 unset use_color
 
-# Shell options
+# [Shell options]
 # -------------
 
 shopt -s globstar               # turn on ** and **/ globing! (ex: echo **)
@@ -108,24 +107,21 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
-# the following is slow on some machines, probably after initializing bash_completion
-complete -cf sudo
-# something also root-related, might remove
-xhost +local:root > /dev/null 2>&1
-
-
 # Chopping block
 if [[ -f ~/.bash_chopping_block  ]]; then
     source ~/.bash_chopping_block
 fi
 
-# Program Configuration (Interactive Programs Only)
+# [Program Configuration (Interactive Programs Only)]
 # -------------------------------------------------
 
 profiles=('/usr/share/bash-completion/bash_completion' "$HOME/.fzf.bash")
 if [[ -r "/usr/share/bash-completion/bash_completion" ]]; then
     source "/usr/share/bash-completion/bash_completion"
+    # following is slow on some machines, might turn off
     complete -cf sudo
+    # something also root-related, might remove
+    xhost +local:root > /dev/null 2>&1
 fi
 if [[ -r ~/.fzf/.bash ]]; then
     source ~/.fzf/.bash
