@@ -24,6 +24,10 @@ if [[ -d ~/local/bin && "$PATH" != *~/local/bin* ]]; then
     PATH=~/local/bin:"$PATH"
 fi
 
+if [[ -d ~/bin && "$PATH" != *~/bin* ]]; then
+    PATH=~/bin:"$PATH"
+fi
+
 # Call bashrc file
 # ----------------
 
@@ -31,3 +35,8 @@ if [[ -f ~/.bashrc ]]; then
     source ~/.bashrc
 fi
 
+# Activate python venv
+
+if [[ -f ~/venv/bin/activate ]]; then
+    source ~/venv/bin/activate
+fi
