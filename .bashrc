@@ -1,36 +1,49 @@
-#!/bin/bash
+# [Header]
+# --------
+# .bashrc: For everything you wish to have when running bash
+# .bashrc by design is sourced when bash not invoked as login shell
+# I've configured .bashrc to be sourced even if bash is invoked as login shell
+
+# [Non-Interactive and Interactive]
+# ---------------------------------
+# Try to keep minimal, currently nothing
+# Stuff shared by non-interactive and interactive is best done at login
+
+# [Interactive-Only From Here]
+# ----------------------------
 
 if [[ $- != *i* ]] ; then
-	# Shell is non-interactive.  Be done now!
-	return
+    # Shell is non-interactive.  Be done now!
+    return
 fi
 
-# [Environment Variabls for Interactive Mode]
+# [Environment Variables for Interactive Mode]
 # -----------------------------------------
 
-export EDITOR='EMACS_HEAVY= emacs -nw'
+export EDITOR='emacsclient -t'  # big change: use emacs server
 export PAGER='less -XR'
 
 # [Aliases and functions]
 # ---------------------
 
-# LS related
+# Emacs Aliases
+alias e='emacsclient -c'           # make this default emacs invocation
+alias en='emacsclient -cn'       # default but don't wait for edit
+alias et="$EDITOR"              # let's sync et and EDITOR
+alias eq="emacs -Q -nw"         # old reliable, try to phase out
+# LS Aliases
 alias ll='ls -lh --color=auto --group-directories-first'
 alias lla='ls -alh --color=auto --group-directories-first'
 alias ls='ls --color=auto --group-directories-first'
 alias ld='ls -d */'
 alias lf='find . -maxdepth 1 -type f  | cut -d / -f 2  | xargs ls --color=auto --group-directories-first'
-# Emacs
-alias ec='emacsclient'
-alias en='emacsclient -n'
-alias et="$EDITOR"
-alias eq="emacs -Q -nw"
 # Other
 alias echo='echo -e'
-alias less='less -RS'		# truncate lines and allow for scrolling
+alias less='less -RS'           # Truncate lines and allow for scrolling
 alias duh='du -h --time --max-depth 1'
 alias diffstat='diffstat -C'
-alias rg='rg -S'		# turn on smart-search by default
+alias ps='ps -f'                # Always have full turned on
+alias rg='rg -S'                # Turn on smart-search by default
 # Grep (note GREP_COLOR is deprecated so we need these silly aliases)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -38,9 +51,9 @@ alias fgrep='fgrep --color=auto'
 
 open () {
     if [[ "$1" =~ .*.xlsx ]]; then
-	libreoffice "$@" &> /dev/null &
+        libreoffice "$@" &> /dev/null &
     else
-	xdg-open "$@"
+        xdg-open "$@"
     fi
 }
 
@@ -64,7 +77,7 @@ if [[ -n $use_color ]]; then
 	elif [[ -f /etc/DIR_COLORS ]] ; then # if no custom dir colors, check /etc
 	    eval $(dircolors -b /etc/DIR_COLORS)
 	fi  # don't need to `eval dircolors -b` if no custom files, bc it should have run
-    fi
+fi
 
     BLACK="\[$(tput setaf 0)\]"
     RED="\[$(tput setaf 1)\]"
@@ -78,7 +91,7 @@ if [[ -n $use_color ]]; then
     BABY="\[$(tput setaf 10)\]"
     BOLD="\[$(tput bold)\]"
     RESET="\[$(tput sgr0)\]"
-    
+
     if [[ ${EUID} != 0 ]] ; then
 	PS1="${GRAY}\t${RESET} \w ${BABY}>> ${RESET}"
     else
@@ -133,8 +146,16 @@ for profile in "${profiles[@]}"; do
     fi
 done
 
-if [[ -f ~/anaconda3/bin/conda ]]; then
-    eval "$(/home/wgs/anaconda3/bin/conda shell.bash hook)"
-    # run conda activate to activate base
+# Activate python venv
+# --------------------
+
+if [[ -f ~/venv/bin/activate ]]; then
+    source ~/venv/bin/activate
 fi
 
+# Run tmux is pwd is home or Desktop
+# ----------------------------------
+# Desktop is when launched by right click in Desktop
+if [[ ($PWD == $HOME || $PWD == $HOME/Desktop) && -z $TMUX ]]; then
+    exec tmux
+fi
