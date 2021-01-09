@@ -21,7 +21,7 @@ fi
 # -----------------------------------------
 
 export EDITOR='emacsclient -t'  # big change: use emacs server
-export PAGER='less -XR'
+export PAGER='less -XRS'
 
 # [Aliases and functions]
 # ---------------------
