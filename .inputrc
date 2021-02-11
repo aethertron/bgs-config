@@ -1,6 +1,11 @@
+
+# [set variables]
+set completion-ignore-case on
+# display variables
 set show-all-if-unmodified on
 # keep off: want symlink dirs to appear as dirs
 set visible-stats off
+
 
 "\C-p":history-search-backward
 "\C-n":history-search-forward
