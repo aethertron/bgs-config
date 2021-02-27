@@ -22,6 +22,7 @@ fi
 
 export EDITOR='emacsclient -t'  # big change: use emacs server
 export PAGER='less -XRS'
+export COLUMNS
 
 # [Aliases and functions]
 # ---------------------

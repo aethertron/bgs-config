@@ -20,6 +20,10 @@ if [[ -d ~/local/bin && "$PATH" != *~/local/bin* ]]; then
     PATH=~/local/bin:"$PATH"
 fi
 
+if [[ -d ~/.local/bin && "$PATH" != *~/.local/bin* ]]; then
+    PATH=~/.local/bin:"$PATH"
+fi
+
 if [[ -d ~/bin && "$PATH" != *~/bin* ]]; then
     PATH=~/bin:"$PATH"
 fi

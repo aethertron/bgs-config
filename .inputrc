@@ -5,6 +5,8 @@ set completion-ignore-case on
 set show-all-if-unmodified on
 # keep off: want symlink dirs to appear as dirs
 set visible-stats off
+# who cares about case when completing files/dirs esp. on Windows?
+set completion-ignore-case on
 
 
 "\C-p":history-search-backward
