@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+
+import os
+cols = int(os.environ['COLUMNS'])
+cntstr = '0123456789'
+tens, rem = divmod(cols, 10)
+# ones
+line = cntstr * tens + cntstr[:rem]
+print(line)
+# tens
+line = ''
+for ii in range(tens+1):
+    line += cntstr[ii % 10] + '-' * 9
+line = line[:-10+rem]
+print(line)
+# hundreds
+huns, rem = divmod(cols, 100)
+line = ''
+for ii in range(huns+1):
+    line += cntstr[ii % 10] + '-' * 99
+line = line[:-100+rem]
+print(line)
+# stats
+print('{{:=^{}}}'.format(cols).format('  ' + str(cols) + '  ' + 'cols'))
