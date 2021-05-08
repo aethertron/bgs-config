@@ -44,7 +44,7 @@ alias less='less -RS'           # Truncate lines and allow for scrolling
 alias duh='du -h --time --max-depth 1'
 alias diffstat='diffstat -C'
 alias ps='ps -f'                # Always have full turned on
-alias rg='rg -S'                # Turn on smart-search by default
+alias rg='grep --color=auto'    # Not using rg rn
 # Grep (note GREP_COLOR is deprecated so we need these silly aliases)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -129,7 +129,12 @@ fi
 # [Program Configuration (Interactive Programs Only)]
 # -------------------------------------------------
 
-profiles=('/usr/share/bash-completion/bash_completion' "$HOME/.fzf.bash")
+profiles=('/usr/share/bash-completion/bash_completion' "$HOME/.fzf.bash" "$HOME/local/src/tmux-bash-completion/completions/tmux")
+for profile in "${profiles[@]}"; do
+    if [[ -r "$profile" ]]; then
+	source "$profile"
+    fi
+done
 if [[ -r "/usr/share/bash-completion/bash_completion" ]]; then
     source "/usr/share/bash-completion/bash_completion"
     # following is slow on some machines, might turn off
@@ -137,15 +142,6 @@ if [[ -r "/usr/share/bash-completion/bash_completion" ]]; then
     # something also root-related, might remove
     xhost +local:root > /dev/null 2>&1
 fi
-if [[ -r ~/.fzf/.bash ]]; then
-    source ~/.fzf/.bash
-    complete -cf sudo
-fi
-for profile in "${profiles[@]}"; do
-    if [[ -r "$profile" ]]; then
-	source "$profile"
-    fi
-done
 
 # Activate python venv
 # --------------------
