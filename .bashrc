@@ -44,7 +44,6 @@ alias less='less -RS'           # Truncate lines and allow for scrolling
 alias duh='du -h --time --max-depth 1'
 alias diffstat='diffstat -C'
 alias ps='ps -f'                # Always have full turned on
-alias rg='grep --color=auto'    # Not using rg rn
 # Grep (note GREP_COLOR is deprecated so we need these silly aliases)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
