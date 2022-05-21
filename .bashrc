@@ -20,7 +20,7 @@ fi
 # [Environment Variables for Interactive Mode]
 # -----------------------------------------
 
-export EDITOR='emacs -nw -Q'  # big change: use emacs server
+export EDITOR='emacs -nw -Q'  # use standalone emacs by default
 export PAGER='less -XRS'
 export COLUMNS
 
@@ -28,10 +28,9 @@ export COLUMNS
 # ---------------------
 
 # Emacs Aliases
-alias e='emacsclient -c'           # make this default emacs invocation
-alias en='emacsclient -cn'       # default but don't wait for edit
-alias et="$EDITOR"              # let's sync et and EDITOR
-alias eq="emacs -nw -Q"         # old reliable, try to phase out
+alias ec='emacsclient'          # simplify
+alias et="emacsclient --tty"    # 
+alias eq="emacs -nw -Q"         # old reliable
 # LS Aliases
 alias ll='ls -lh --color=auto --group-directories-first'
 alias lla='ls -alh --color=auto --group-directories-first'
