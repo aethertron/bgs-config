@@ -144,14 +144,16 @@ fi
 
 # Activate python venv
 # --------------------
-
-if [[ -f ~/venv/bin/activate ]]; then
-    source ~/venv/bin/activate
-fi
+# (Turn this off for now)
+# if [[ -f ~/venv/bin/activate ]]; then
+#     source ~/venv/bin/activate
+# fi
 
 # Run tmux is pwd is home or Desktop
 # ----------------------------------
 # Desktop is when launched by right click in Desktop
-if [[ ($PWD == $HOME || $PWD == $HOME/Desktop) && -z $TMUX ]]; then
-    tmux
-fi
+# (Turn this off for now)
+# Keep this off until ^S/^Q suspend/resume is handled better!
+# if [[ ($PWD == $HOME || $PWD == $HOME/Desktop) && -z $TMUX ]]; then
+#     tmux
+# fi
