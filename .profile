@@ -14,6 +14,6 @@ if [[ -f ~/.bash_profile ]]; then
 fi
 
 # dirty hack for programs that are acting strange
-if [[ command -v conky ]]; then
-   conky -q -d -c ~/conky/conky-grapes/conky_gen.conkyrc &
-fi
+# if [[ command -v conky ]]; then
+#    conky -q -d -c ~/conky/conky-grapes/conky_gen.conkyrc &
+# fi

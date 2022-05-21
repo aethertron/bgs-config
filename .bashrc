@@ -20,7 +20,7 @@ fi
 # [Environment Variables for Interactive Mode]
 # -----------------------------------------
 
-export EDITOR='emacsclient -t'  # big change: use emacs server
+export EDITOR='emacs -nw -Q'  # big change: use emacs server
 export PAGER='less -XRS'
 export COLUMNS
 
@@ -31,7 +31,7 @@ export COLUMNS
 alias e='emacsclient -c'           # make this default emacs invocation
 alias en='emacsclient -cn'       # default but don't wait for edit
 alias et="$EDITOR"              # let's sync et and EDITOR
-alias eq="emacs -nw"         # old reliable, try to phase out
+alias eq="emacs -nw -Q"         # old reliable, try to phase out
 # LS Aliases
 alias ll='ls -lh --color=auto --group-directories-first'
 alias lla='ls -alh --color=auto --group-directories-first'
@@ -153,5 +153,5 @@ fi
 # ----------------------------------
 # Desktop is when launched by right click in Desktop
 if [[ ($PWD == $HOME || $PWD == $HOME/Desktop) && -z $TMUX ]]; then
-    exec tmux
+    tmux
 fi

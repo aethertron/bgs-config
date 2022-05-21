@@ -126,4 +126,34 @@
 
 # TO-DO: track konsole and dolphine?
 /konsolerc
-/dolphinrc  
+/dolphinrc
+/flameshot/
+/ksnip*
+/conky/
+/remmina/
+/xsettingsd/
+/.gsd-keyboard.settings-ported
+/KDE/
+/discord/
+/enchant/
+/eog/
+/evince/
+/evolution/
+/freerdp/
+/gedit/
+/gnome-control-center/
+/gnome-initial-setup-done
+/gtk-4.0/
+/ibus/
+/kde.org/
+/kdedefaults/
+/khelpcenterrc
+/khtml/
+/kinfocenterrc
+/konquerorrc
+/kwriterc
+/kxkbrc
+/monitors.xml
+/nautilus/
+/neofetch/
+/xdg-desktop-portal-kderc
